@@ -4,10 +4,11 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome To Snake And Ladder Problem");
+            int pos=0;
+            Console.WriteLine("single player at start position" , + pos);
         }
-         
-        
-        
+
+
+
     }
 }
