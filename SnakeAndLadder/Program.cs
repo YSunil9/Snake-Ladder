@@ -9,6 +9,8 @@
             int diceVal = 0;
             int startPos = 0;
             int currPos = 0;
+
+            int count = 0;
            
           
             
@@ -20,6 +22,7 @@
                 Random random = new Random();
                 int dice = random.Next(1, 7);
                 Console.WriteLine("Dice Num : " + dice);
+                count++;
                 
                 switch (option)
                 {
@@ -53,6 +56,9 @@
 
             }
             Console.WriteLine("CurrPos" + currPos);
+            Console.WriteLine("Number of Dice count" + count);
+
+
         }
 
     }
