@@ -13,14 +13,14 @@
           
             
 
-            while (  currPos<100 )
+            while ( currPos<100 )
             {
                 Random randomNum = new Random();
                 int option = randomNum.Next(3);
                 Random random = new Random();
                 int dice = random.Next(1, 7);
                 Console.WriteLine("Dice Num : " + dice);
-
+                
                 switch (option)
                 {
 
@@ -28,12 +28,12 @@
                         currPos += dice;
                         Console.WriteLine("Ladder");
                         Console.WriteLine("CurrPos" + currPos);
-                        if(currPos > 100)
+                        if (currPos > 100)
                         {
-                            currPos -=dice;
+                             currPos -=dice;
                         }
 
-                        break;
+                            break;
 
                     case 2:
                         currPos -= dice;
@@ -41,9 +41,8 @@
                         Console.WriteLine("CurrPos" + currPos);
                         if (currPos < 0)
                         {
-                            currPos=0;
+                          currPos=0;
                         }
-                        
                         break;
                     default:
                         Console.WriteLine("No Play");
